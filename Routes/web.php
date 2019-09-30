@@ -12,5 +12,5 @@
 */
 
 Route::prefix('search')->group(function() {
-    Route::get('/', 'SearchController@index');
+    Route::get('/', 'SearchController@index')->name('main.search');
 });
